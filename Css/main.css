@@ -7,11 +7,13 @@
 @import url(layout/header.css);
 
 
-
 /*---------- COMPONENTS ------------*/
 @import url(Components/modal-search.css);
 @import url(Components/Slider.css);
 @import url(Components/CategoryItem.css);
+@import url(Components/Product-Item.css);
+@import url(Components/Campaigns.css);
 
 
 @import url(Pages/Home.css);
+
