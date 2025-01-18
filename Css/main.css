@@ -5,6 +5,7 @@
 
 /*---------- LAYOUT ------------*/
 @import url(layout/header.css);
+@import url(layout/footer.css);
 
 
 /*---------- COMPONENTS ------------*/
@@ -13,7 +14,10 @@
 @import url(Components/CategoryItem.css);
 @import url(Components/Product-Item.css);
 @import url(Components/Campaigns.css);
+@import url(Components/blog-item.css);
+@import url(Components/campaign-single.css);
 
 
 @import url(Pages/Home.css);
+@import url(Pages/contact.css);
 

@@ -134,7 +134,9 @@ header .menu-dropdown-wrapper {
     left: -30px;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s ease;
+    transition: all .3s ease;
+    z-index: 1000;
+    display: inline-block;
 }
 
 header .menu-dropdown-content {
@@ -168,13 +170,16 @@ header .menu-dropdown-content a:hover{
     padding: 22px;
     display: flex;
     column-gap: 50px;
+    
 }
 
 .megamenu-wrapper .menu-dropdown-wrapper {
-    left: 0;
-    width: 100%;
+    
+    left: 30%;
+    width: max-content;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .megamenu-wrapper {
