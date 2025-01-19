@@ -16,8 +16,18 @@
 @import url(Components/Campaigns.css);
 @import url(Components/blog-item.css);
 @import url(Components/campaign-single.css);
+@import url(Components/single-product/breadcrumb.css);
+@import url(Components/single-product/product-gallery.css);
+@import url(Components/single-product/product-info.css);
+@import url(Components/single-product/product-tabs.css);
+@import url(Components/reviews.css);
 
 
+/*---------- PAGES ------------*/
 @import url(Pages/Home.css);
 @import url(Pages/contact.css);
+@import url(Pages/account.css);
+@import url(Pages/cart.css);
+@import url(Pages/single-product.css);
+@import url(Pages/single-blog.css);
 
