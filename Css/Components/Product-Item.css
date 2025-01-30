@@ -128,3 +128,48 @@
   font-size: 14px;
   display: flex;
 }
+
+.glide {
+  position: relative;
+}
+
+.glide__arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+}
+
+.glide__arrow--left {
+  left: -40px;
+}
+.glide__arrow--right {
+  right: -40px;
+}
+
+.glide__arrow i {
+  font-size: 30px;
+  opacity: 0.2;
+  transition: 0.3s ease all;
+}
+
+.glide__arrow i:hover{
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .glide .glide__arrow--left {
+    left: -30px;
+    
+  }
+
+ .glide .product-info .product-discount {
+   width: 5px;
+   height: 5px;
+   background-color: #7d7d7d;
+ }
+
+  .glide .glide__arrow--right {
+    right: -40px;
+   
+  }
+}
