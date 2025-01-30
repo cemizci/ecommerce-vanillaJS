@@ -237,7 +237,7 @@
     <!-------------Slider Start------------>
     <section class="slider">
       <div class="slider-elements">
-        <div class="slider-item">
+        <div class="slider-item fade" >
           <div class="slider-image">
             <img src="assets/slider/slider1.jpg" class="img-fluid" alt="">
           </div>
@@ -247,22 +247,42 @@
             <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
           </div>
         </div>
+        <div class="slider-item fade">
+          <div class="slider-image">
+            <img src="assets/slider/slider2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="container">
+            <p class="slider-title">SUMMER 2022</p>
+            <h2 class="slider-heading">Save up to 70%</h2>
+            <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+          </div>
+        </div>
+        <div class="slider-item fade" >
+          <div class="slider-image">
+            <img src="assets/slider/slider3.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="container">
+            <p class="slider-title">SUMMER 2022</p>
+            <h2 class="slider-heading">Save up to 70%</h2>
+            <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+          </div>
+        </div>
           <div class="slider-buttons">
-            <button>
-              <i class="bi bi-checron-left"></i>
+            <button id="prevBtn">
+              <i class="bi bi-chevron-left"></i>
             </button>
-            <button>
-              <i class="bi bi-checron-right"></i>
+            <button id="nextBtn">
+              <i class="bi bi-chevron-right"></i>
             </button>
           </div>
           <div class="slider-dots">
-            <button class="slider-dot">
+            <button class="slider-dot active" onclick="currentSlide(0)">
               <span></span>
             </button>
-            <button class="slider-dot">
+            <button class="slider-dot" onclick="currentSlide(1)">
               <span></span>
             </button>
-            <button class="slider-dot">
+            <button class="slider-dot" onclick="currentSlide(2)">
               <span></span>
             </button>
           </div> 
