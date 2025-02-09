@@ -1,8 +1,35 @@
 import { product1st } from "./glide.js";
 
+let products = [];
+let cart = [];
+
+
+cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+
+
+function addToCart() {
+  const cartItems = document.querySelector('.header-cart-count');
+  const buttons = [...document.getElementsByClassName("add-to-cart")];
+  buttons.forEach(element => {
+    const inCart = cart.find((item) => item.id === Number(element.id));
+
+    if(inCart){
+      element.setAttribute('disable', 'disable')
+    }else {
+      element.addEventListener('click', function(e){
+        e.preventDefault();
+        const id = e.target.id;
+        const findProduct = products.find((product) => product.id === Number(id));
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        element.setAttribute('disable', 'disable');
+      });
+    }
+  });
+}
 
 function productsFunc(){
-    const products = localStorage.getItem("products") 
+     products = localStorage.getItem("products") 
     ? JSON.parse(localStorage.getItem("products")) : [];
     console.log(products)
     const productsContainer = document.getElementById("product-list");
@@ -43,7 +70,7 @@ products.forEach(item => {
               </div>
               <span class="product-discount">-${item.discount}%</span>
               <div class="product-links">
-                <button>
+                <button class="add-to-cart" id=${item.id}>
                   <i class="bi bi-basket-fill"></i>
                 </button>
                 <button>
@@ -59,10 +86,12 @@ products.forEach(item => {
             </div>
           </li>   
     `
-    productsContainer.innerHTML = result;
+    productsContainer ? (productsContainer.innerHTML = result) : "";
+    
 });
-
+addToCart();
 product1st();
+
 }
 
-export default productsFunc();
+export default productsFunc;

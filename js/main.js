@@ -10,7 +10,13 @@ async function getData() {
     const data = await photos.json();
 
     data ? localStorage.setItem("products", JSON.stringify(data)) : [];
+    productsFunc();
 }
 
 getData();
+
+
+const cartItems = document.querySelector('.header-cart-count');
+
+cartItems.innerHTML = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')).length : "0";
 
