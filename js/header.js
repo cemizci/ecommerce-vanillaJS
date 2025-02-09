@@ -7,7 +7,7 @@ const modalCloseBtn = document.querySelector('#modalCloseBtn')
 const modalSearchWrapper = document.querySelector(".modal-wrapper")
 
 /************* SideBar Start *****************/
-export function header(){
+function header(){
     menuBtn.addEventListener('click', () => {
         mobileMenu.style.left = "0";
      });
