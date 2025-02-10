@@ -24,10 +24,8 @@ function displayCartProduct(){
     });
     cartWrapper.innerHTML = result;
     removeCartItem();
+    
 }
-
-displayCartProduct();
-
 
 function removeCartItem(){
     let cartItems = document.querySelector('.header-cart-count');
@@ -36,9 +34,38 @@ function removeCartItem(){
         button.addEventListener('click', function(e) {
             const id = e.target.dataset.id;
             cart = cart.filter((item) => item.id !== Number(id));
-            displayCartProduct();
             localStorage.setItem("cart", JSON.stringify(cart));
             cartItems.innerHTML = cart.length;
+            displayCartProduct();
+            saveCartValues();
         })
     })
 }
+
+
+function saveCartValues(){
+    const cartTotal = document.getElementById("cart-total");
+    const subTotal = document.getElementById("subtotal");
+    const fastCargo = document.getElementById("fast-cargo");
+    const fastCargoPrice = 15;
+    let itemsTotal = 0;
+
+    cart.forEach(item => {
+        itemsTotal += item.price.newPrice * item.quantity
+    });
+    console.log(itemsTotal)
+   
+    subTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+    cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
+
+    fastCargo.addEventListener('change', function(e){
+        if(e.target.checked){
+            cartTotal.innerHTML = `$${(itemsTotal + fastCargoPrice).toFixed(2)}`
+        }else {
+            cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`
+        }
+    });
+}
+
+displayCartProduct();
+saveCartValues();

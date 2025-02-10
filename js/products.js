@@ -3,11 +3,8 @@ import { product1st } from "./glide.js";
 let products = localStorage.getItem("products") 
 ? JSON.parse(localStorage.getItem("products")) : [];
 
-export let cart = localStorage.getItem('cart') 
+let cart = localStorage.getItem('cart') 
 ? JSON.parse(localStorage.getItem('cart')) : [];
-
-
-
 
 
 function addToCart() {
