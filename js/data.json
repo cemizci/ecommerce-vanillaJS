@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Analogue Resin Strap",
         "price": {
-            "oldPrice": 165.00,
-            "newPrice": 108.00
+            "oldPrice": 265.00,
+            "newPrice": 200.00
         },
         "discount": 22,
         "img": {
@@ -20,8 +20,8 @@
         "id": 2,
         "name": "Ridley High Waist",
         "price": {
-            "oldPrice": 165.00,
-            "newPrice": 208.00
+            "oldPrice": 265.00,
+            "newPrice": 200.00
         },
         "discount": 33,
         "img": {
@@ -38,7 +38,7 @@
         "name": "Blush Beanie",
         "price": {
             "oldPrice": 165.00,
-            "newPrice": 38.00
+            "newPrice": 72.00
         },
         "discount": 90,
         "img": {
@@ -54,8 +54,8 @@
         "id": 4,
         "name": "Mercury Tee",
         "price": {
-            "oldPrice": 165.00,
-            "newPrice": 48.00
+            "oldPrice": 105.00,
+            "newPrice": 60.00
         },
         "discount": 40,
         "img": {
@@ -71,7 +71,7 @@
         "id": 5,
         "name": "La Bohème Rose Gold",
         "price": {
-            "oldPrice": 165.00,
+            "oldPrice": 95.00,
             "newPrice": 48.00
         },
         "discount": 40,
