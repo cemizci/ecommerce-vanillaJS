@@ -19,11 +19,6 @@
   cursor: zoom-in;
 }
 
-.single-product .gallery-thumbs {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
-}
 
 .single-product .gallery-thumbs li {
   cursor: pointer;
@@ -32,7 +27,7 @@
 
 .single-product .gallery-thumbs li img {
   border: 1px solid transparent;
-  width: 100%;
+  width: 30%;
   height: auto;
 }
 

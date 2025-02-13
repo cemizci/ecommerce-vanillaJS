@@ -42,4 +42,25 @@ const config2 = {
     }
 }
 
-productsContainer && new Glide('.glide2',config2).mount()
+productsContainer && new Glide('.glide2',config2).mount();
+
+
+export function singleThumbs() {
+    const config3 = {
+        perWiew: 5,
+        breakpoints: {
+            992: {
+                perWiew: 3,
+            },
+            768: {
+                perWiew: 2,
+            },
+            576: {
+                perWiew: 1,
+            },
+        },
+    };
+    
+    new Glide(".product-thumb", config3).mount();
+}
+
