@@ -9,7 +9,6 @@ export function thumbsActiveFunc(){
                 image.classList.remove("active");
             })
             singleImage.src = item.src;
-            
             item.classList.add("active")
         })
     })

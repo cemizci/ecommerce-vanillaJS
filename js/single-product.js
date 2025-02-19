@@ -1,5 +1,8 @@
 import { thumbsActiveFunc } from "./single-product/thumbs-active.js";
 import { singleThumbs } from "./glide.js";
+import  zoomFunc   from "./single-product/zoom.js";
+import colorsFunc from "./single-product/color.js"
+import valuesFunc from "./single-product/values.js"
 
 
 const productId = localStorage.getItem("productId") 
