@@ -43,4 +43,25 @@ galleryThumbs.innerHTML = result;
 singleThumbs();
 thumbsActiveFunc();
 
+// add to cart
+
+let cart = localStorage.getItem("cart") 
+? JSON.parse(localStorage.getItem("cart")) : [];
+
+const findCart = cart.find((item) => item.id === findProduct);
+const btnAddToCart = document.getElementById("add-to-cart");
+const quantityDOM = document.getElementById("quantity");
+let cartItems = document.querySelector(".header-cart-count");
+
+if(findCart){
+    btnAddToCart.setAttribute("disabled", "disabled");
+}else {
+    btnAddToCart.addEventListener("click", function(){
+        cart.push({ ...findProduct, quantity: Number(quantityDOM.value) });
+        btnAddToCart.setAttribute("disabled", "disabled");
+        localStorage.setItem("cart",JSON.stringify(cart));
+        cartItems.innerHTML = cart.length;
+    })
+}
+
 
