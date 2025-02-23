@@ -3,6 +3,7 @@ import { singleThumbs } from "./glide.js";
 import  zoomFunc   from "./single-product/zoom.js";
 import colorsFunc from "./single-product/color.js"
 import valuesFunc from "./single-product/values.js"
+import tabFunc from "./single-product/tabs.js"
 
 
 const productId = localStorage.getItem("productId") 
@@ -23,8 +24,8 @@ productTitle.innerHTML = findProduct.name;
 const newPriceDOM = document.querySelector(".new-price");
 const oldPriceDOM = document.querySelector(".old-price");
 
-newPriceDOM.innerHTML = findProduct.price.newPrice.toFixed(2);
-oldPriceDOM.innerHTML = findProduct.price.oldPrice.toFixed(2);
+newPriceDOM.innerHTML = `$${findProduct.price.newPrice.toFixed(2)}`;
+oldPriceDOM.innerHTML = `$${findProduct.price.oldPrice.toFixed(2)}`;
 
 const singleImageDOM = document.querySelector("#single-image");
 
