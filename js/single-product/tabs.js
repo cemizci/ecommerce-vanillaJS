@@ -1,7 +1,7 @@
 const tabFunc = () => {
     const btnTab = document.querySelectorAll(".tab-button");
     const contentDOM = document.querySelectorAll(".content");
-    const tabsWrapperDOM = document.querySelector(".single-tabs");
+    const tabsWrapperDOM = document.querySelector(".tab-list");
 
     tabsWrapperDOM.addEventListener("click", function(e){
         e.preventDefault();
