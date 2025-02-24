@@ -100,10 +100,10 @@ input[type="number"]::-webkit-inner-spin-button{
 
 
 .img-fluid{
-  width: 100%;
+  max-width: 100%;
 }
 
-body{
+html , body{
   overflow-x: hidden;
 }
 

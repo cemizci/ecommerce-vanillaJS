@@ -132,17 +132,19 @@
 /*! copyright start  */
 .footer-copyright {
   margin: 40px 0;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer-copyright .site-copyright {
   font-size: 12px;
-  margin-right: 10px;
 }
 
 .footer-copyright .footer-menu {
-  margin-left: auto;
+  
+ 
 }
 
 .footer-copyright .footer-menu-list {

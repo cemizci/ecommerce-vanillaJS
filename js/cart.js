@@ -53,7 +53,6 @@ function saveCartValues(){
     cart.forEach(item => {
         itemsTotal += item.price.newPrice * item.quantity
     });
-    console.log(itemsTotal)
    
     subTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
     cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;

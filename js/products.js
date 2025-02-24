@@ -23,6 +23,7 @@ function addToCart() {
         cart.push({ ...findProduct, quantity: 1 });
         localStorage.setItem("cart", JSON.stringify(cart));
         element.setAttribute('disable', 'disable');
+        cartItems.innerHTML = cart.length;
       });
     }
   });
